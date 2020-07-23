@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import Profile from "../profile/Profile";
+import Profile from "../profile/ProfileLazy";
 import "./Blog.css";
 import Headline from "../components/Headline";
 
