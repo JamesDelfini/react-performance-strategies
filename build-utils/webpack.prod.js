@@ -7,7 +7,7 @@ const config = {
   mode: "production",
   entry: {
     app: [`${commonPaths.appEntry}/index.js`],
-    profile: [`${commonPaths.appEntry}/profile/Profile.js`],
+    // profile: [`${commonPaths.appEntry}/profile/Profile.js`],
   },
   output: {
     filename: "static/[name].js",
