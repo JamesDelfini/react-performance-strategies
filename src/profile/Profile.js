@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import LazyParagraph from "./LazyParagraph";
 
-// import _ from "lodash/array";
-import _ from "lodash";
+import _ from "lodash/array";
 
 import Headline from "../components/Headline";
 

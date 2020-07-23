@@ -17,9 +17,9 @@ const config = {
     "react-dom": "ReactDOM",
   },
   optimization: {
-    runtimeChunk: {
-      name: "manifest",
-    },
+    // runtimeChunk: {
+    //   name: "manifest",
+    // },
     splitChunks: {
       cacheGroups: {
         vendor: {
