@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const config = {
   mode: "production",
+  devtool: "source-map",
   entry: {
     app: [`${commonPaths.appEntry}/index.js`],
     // profile: [`${commonPaths.appEntry}/profile/Profile.js`],
