@@ -11,16 +11,17 @@ const config = {
     // profile: [`${commonPaths.appEntry}/profile/Profile.js`],
   },
   output: {
-    filename: "static/[name].js",
+    filename: "static/[name].[contenthash].js",
   },
   externals: {
     react: "React",
     "react-dom": "ReactDOM",
   },
   optimization: {
-    // runtimeChunk: {
-    //   name: "manifest",
-    // },
+    moduleIds: "hashed",
+    runtimeChunk: {
+      name: "manifest",
+    },
     splitChunks: {
       cacheGroups: {
         vendor: {
@@ -63,7 +64,7 @@ const config = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "styles/[name].css",
+      filename: "styles/[name].[contenthash].css",
     }),
     new HtmlWebpackPlugin({
       template: `public/index.html`,
